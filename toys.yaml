@@ -1,0 +1,26 @@
+data: '/home/mashuming/data/snap/toys/data/'
+logF: 'experiments/toys/'
+epoch: 10
+batch_size: 64
+num_label: 5
+optim: 'adam'
+cell: 'lstm'
+attention: 'None'
+learning_rate: 0.0003
+max_grad_norm: 10
+learning_rate_decay: 0.5
+start_decay_at: 5
+emb_size: 256
+hidden_size: 256
+dec_num_layers: 1
+enc_num_layers: 1
+bidirectional: True
+dropout: 0.0
+max_time_step: 50
+eval_interval: 1000
+save_interval: 3000
+metrics: ['rouge']
+shared_vocab: True
+beam_size: 1
+unk: True
+
